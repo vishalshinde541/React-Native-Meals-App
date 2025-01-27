@@ -14,7 +14,16 @@ function MealsOverviewScreen({ route }) {
   });
 
   function renderMealItem(itemData) {
-    return <MealItem title={itemData.item.title} />;
+    const item = itemData.item;
+
+    const mealItemProps = {
+      title: item.title,
+      imageUrl: item.imageUrl,
+      duration: item.duration,
+      complexity: item.complexity,
+      affordability: item.affordability,
+    };
+    return <MealItem {...mealItemProps} />;
   }
 
   return (
@@ -24,7 +33,6 @@ function MealsOverviewScreen({ route }) {
         keyExtractor={(item) => item.id}
         renderItem={renderMealItem}
       />
-      <Text>Meals Overview Screen - {catId}</Text>
     </View>
   );
 }
