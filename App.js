@@ -19,7 +19,7 @@ export default function App() {
             headerStyle: { backgroundColor: "#351401" },
             headerTintColor: "white",
             contentStyle: {
-              backgroundColor: "#351401",
+              backgroundColor: "#3f2f25",
             },
           }}
         >
