@@ -8,7 +8,7 @@ import {
 } from "react-native";
 
 import { useNavigation } from "@react-navigation/native";
-import MealDetails from "./MealDetails";
+import MealDetails from "../MealDetails";
 
 function MealItem({
   id,
@@ -77,7 +77,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
     margin: 8,
   },
-  
   itemPressed: {
     opacity: 0.5,
   },
